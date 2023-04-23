@@ -9,7 +9,7 @@ const logger = () => {
   const randomColor = getRandomHexColor();
   document.body.style.backgroundColor = randomColor;
 };
-let intervalId;
+let intervalId = null;
 btnStart.addEventListener('click', () => {
   logger(0);
   intervalId = setInterval(logger, 1000, 0);
