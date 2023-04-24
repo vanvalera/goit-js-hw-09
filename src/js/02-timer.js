@@ -93,6 +93,7 @@ const updateTimer = remainder => {
   refs.days.textContent = addLeadingZero(time.days);
   refs.hours.textContent = addLeadingZero(time.hours);
   refs.minutes.textContent = addLeadingZero(time.minutes);
+  refs.seconds.textContent = addLeadingZero(time.seconds);
 };
 
 const onStartBtnClick = () => {
