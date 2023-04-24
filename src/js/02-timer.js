@@ -106,5 +106,5 @@ const onStartBtnClick = () => {
 const addLeadingZero = value => {
   return String(value).padStart(2, '0');
 };
-const flatpickr = flatpickr(dataTime, options);
+flatpickr(dataTime, options);
 refs.btnStart.addEventListener('click', onStartBtnClick);
