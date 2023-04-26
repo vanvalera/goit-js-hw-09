@@ -33,6 +33,10 @@ class Timer {
     this.intervalId = setInterval(() => {
       let remainder = selectedDate - currentDate;
       currentDate += 1000;
+      if (remainder <= 0) {
+        this.stop();
+        return;
+      }
       updateTimer(remainder);
     }, 1000);
     Notiflix.Notify.success('Timer started');
